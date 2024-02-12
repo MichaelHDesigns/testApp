@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --port $PORT",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -11,6 +11,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^6.22.0",
     "react-three-fiber": "^6.0.13",
