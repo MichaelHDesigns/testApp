@@ -7,7 +7,7 @@ import "../style.css";
 
 function init() {
   const app = document.getElementById("app");
-  const sphereRadius = 4.5;
+  const sphereRadius = 2.5;
   const mousePos = new THREE.Vector2();
   const raycaster = new THREE.Raycaster();
 
@@ -93,7 +93,7 @@ function init() {
   earthGroup.add(earthCloudMesh);
 
   // Earth Glow Shader
-  const earthGlowGeometry = new THREE.SphereGeometry(sphereRadius + 0.65),
+  const earthGlowGeometry = new THREE.SphereGeometry(sphereRadius + 0.325),
     earthGlowMaterial = new THREE.ShaderMaterial({
       uniforms: {},
       vertexShader: [
