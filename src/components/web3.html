@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using web3 with HTHWeb3</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@0.20.1/dist/web3.min.js"></script>
+</head>
+<body>
+  <h1>Using web3 with HTHWeb3</h1>
+
+  <p>
+    The <code>web3</code> library is a JavaScript library that allows you to interact with Ethereum-like blockchains.
+    It provides a convenient way to connect to blockchain nodes, query information, and send transactions.
+  </p>
+
+  <p>
+    In this example, we also have a custom class <code>HTHWeb3</code> that extends the functionality of <code>web3</code>.
+    The class includes methods for managing accounts, network IDs, and setting a custom provider.
+  </p>
+
+  <h2>Example Usage</h2>
+
+  <script>
+    // HTHWeb3 class definition
+    class HTHWeb3 {
+      constructor() {
+        this.isConnected = false;
+        this.defaultAccount = null;
+        this.networkId = null;
+      }
+
+      setProvider(provider) {
+        this.provider = provider;
+        this.isConnected = true;
+      }
+
+      eth = {
+        getAccounts: async () => {
+          if (this.defaultAccount) {
+            return [this.defaultAccount];
+          } else {
+            throw new Error("No accounts available");
+          }
+        },
+        getId: async () => {
+          if (this.networkId) {
+            return this.networkId;
+          } else {
+            throw new Error("Network ID not available");
+          }
+        },
+      };
+
+      setDefaultAccount(account) {
+        this.defaultAccount = account;
+      }
+
+      setNetworkId(networkId) {
+        this.networkId = networkId;
+      }
+    }
+
+    // Usage of HTHWeb3
+    const web3 = new HTHWeb3();
+    console.log("HTHWeb3 instance created:", web3);
+
+    // Example of setting a provider (replace with your actual provider)
+    const mockProvider = { example: "provider" };
+    web3.setProvider(mockProvider);
+    console.log("Provider set:", mockProvider);
+
+    // Example of setting default account and network ID
+    const exampleAccount = "0x1234567890123456789012345678901234567890";
+    const exampleNetworkId = 42; // Replace with your actual network ID
+    web3.setDefaultAccount(exampleAccount);
+    web3.setNetworkId(exampleNetworkId);
+    console.log("Default account set:", exampleAccount);
+    console.log("Network ID set:", exampleNetworkId);
+  </script>
+</body>
+</html>

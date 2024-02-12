@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "lat": 42.93573573168239,
+    "lon": -97.39733082732924,
+    "size": 1,
+    "img": "people_1.png",
+    "url": "/src/components/about-hth"
+  },
+  {
+    "id": 2,
+    "lat": 10.637751190298351,
+    "lon": 23.15900881317623,
+    "size": 1,
+    "img": "people_3.png",
+    "url": "/src/components/fundraisers"
+  },
+  {
+    "id": 3,
+    "lat": 50.11103944328161,
+    "lon": 8.824135224928897,
+    "size": 1,
+    "img": "people_4.png",
+    "url": "/src/components/donations"
+  },
+  {
+    "id": 4,
+    "lat": 32.10269258699347,
+    "lon": 77.91109245640956,
+    "size": 1,
+    "img": "people_5.png",
+    "url": "/src/components/donations"
+  },
+  {
+    "id": 5,
+    "lat": 45.828799,
+    "lon": 127.529316,
+    "size": 1,
+    "img": "people_6.png",
+    "url": "/src/components/fundraisers"
+  },
+  {
+    "id": 6,
+    "lat": -15.48897289470476,
+    "lon": -58.13953965450549,
+    "size": 1,
+    "img": "people_7.png",
+    "url": "/src/components/fundraisers"
+  },
+  {
+    "id": 7,
+    "lat": -19.375932,
+    "lon": 482.506916,
+    "size": 1,
+    "img": "people_8.png",
+    "url": "/src/components/fundraisers"
+  }
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>HTH World</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <span class="lines line-1"></span>
+        <span class="lines line-2"></span>
+        <span class="lines line-3"></span>
+      </label>
+
+      <a href="http://t.me/homelesscoin" class="menu-item blue"> <i class="fa fa-telegram"></i> </a>
+      <a href="https://discord.gg/help-the-homeless-coin-459597014246883358" class="menu-item green"> <i class="fab fa-discord"></i> </a>
+      <a href="https://www.tiktok.com/@helpthehomelessworldwide?lang=en" class="menu-item red"> <i class="fab fa-tiktok"></i> </a>
+      <a href="https://twitter.com/hthcoin" class="menu-item purple"> <i class="fa fa-twitter"></i> </a>
+      <a href="https://www.facebook.com/HelptheHomelessCoinOfficial" class="menu-item orange"> <i class="fa fa-facebook"></i> </a>
+      <a href="https://github.com/HTHcoin/HelpTheHomelessCoin" class="menu-item lightblue"> <i class="fa fa-github"></i> </a>
+    </nav>
+
+    <!-- Social Media Container -->
+    <div id="socialMediaContainer">
+      <p>Social Media Links</p>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+
+    <script>
+      function showSocialMediaLinks() {
+        const container = document.getElementById('socialMediaContainer');
+        container.style.display = container.style.display === 'block' ? 'none' : 'block';
+      }
+
+      // Close the container if the user clicks outside of it
+      window.addEventListener('click', function (event) {
+        const container = document.getElementById('socialMediaContainer');
+        if (event.target !== container && !container.contains(event.target)) {
+          container.style.display = 'none';
+        }
+      });
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

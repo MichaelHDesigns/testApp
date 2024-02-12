@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "lat": 8,
+    "lon": 0,
+    "size": 1,
+    "img": "moon_1.png",
+    "url": "/components/donations"
+  },
+  {
+    "id": 2,
+    "lat": -8,
+    "lon": 0,
+    "size": 1,
+    "img": "moon_2.png",
+    "url": "/components/fundraisers"
+  },
+  {
+    "id": 3,
+    "lat": 10,
+    "lon": 0,
+    "size": 1,
+    "img": "moon_3.png",
+    "url": "/components/about-hth"
+  },
+  {
+    "id": 4,
+    "lat": 0,
+    "lon": 0,
+    "size": 1,
+    "img": "moon_4.png",
+    "url": "/components/about-hth"
+  }
+]
