@@ -7,7 +7,7 @@ import "../style.css";
 
 function init() {
   const app = document.getElementById("app");
-  const sphereRadius = 2.5;
+  const sphereRadius = 4.5;
   const mousePos = new THREE.Vector2();
   const raycaster = new THREE.Raycaster();
 
@@ -93,7 +93,7 @@ function init() {
   earthGroup.add(earthCloudMesh);
 
   // Earth Glow Shader
-  const earthGlowGeometry = new THREE.SphereGeometry(sphereRadius + 0.325),
+  const earthGlowGeometry = new THREE.SphereGeometry(sphereRadius + 0.65),
     earthGlowMaterial = new THREE.ShaderMaterial({
       uniforms: {},
       vertexShader: [
@@ -128,7 +128,7 @@ function init() {
   const moonGeometry = new THREE.SphereGeometry(2, 64, 64); // Adjust the moon size
   const moonMaterial = new THREE.MeshStandardMaterial({ map: moonTexture });
   const moon = new THREE.Mesh(moonGeometry, moonMaterial);
-  moon.position.set(10, 0, 0); // Adjust the position as needed
+  moon.position.set(8, 0, 0); // Adjust the position as needed
   scene.add(moon);
 
   /* People Images */

@@ -1,0 +1,26 @@
+[
+  {
+    "index": 1,
+    "size": 1,
+    "img": "people_1.png",
+    "url": "/src/components/social"
+  },
+  {
+    "index": 2,
+    "size": 1,
+    "img": "people_3.png",
+    "url": "/src/components/social"
+  },
+  {
+    "index": 3,
+    "size": 1,
+    "img": "people_4.png",
+    "url": "/src/components/social"
+  },
+  {
+    "index": 4,
+    "size": 1,
+    "img": "people_5.png",
+    "url": "/src/components/social"
+  }
+]
